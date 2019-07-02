@@ -1,0 +1,27 @@
+{
+  "name": "guide",
+  "version": "1.0.0",
+  "description": "教程",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emloxe/guide.git"
+  },
+  "keywords": [
+    "guide"
+  ],
+  "author": "emloxe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emloxe/guide/issues"
+  },
+  "homepage": "https://github.com/emloxe/guide#readme",
+  "dependencies": {
+    "vuepress": "^1.0.0-rc.1"
+  }
+}
