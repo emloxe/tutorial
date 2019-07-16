@@ -1,5 +1,5 @@
 {
-  "name": "guide",
+  "name": "tutorial",
   "version": "1.0.0",
   "description": "教程",
   "main": "index.js",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emloxe/guide.git"
+    "url": "git+https://github.com/emloxe/tutorial.git"
   },
   "keywords": [
-    "guide"
+    "tutorial"
   ],
   "author": "emloxe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/emloxe/guide/issues"
+    "url": "https://github.com/emloxe/tutorial/issues"
   },
-  "homepage": "https://github.com/emloxe/guide#readme",
+  "homepage": "https://github.com/emloxe/tutorial#readme",
   "dependencies": {
     "vuepress": "^1.0.0-rc.1"
   }
