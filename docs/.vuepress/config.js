@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Zhang W.J.网站',  // 设置网站标题
   description : '张雯瑾网站',
-  base : '/guide/',
+  base : '/tutorial/',
   themeConfig : {
     nav : [
         { text: 'test1', link: '/test1/' },
@@ -24,7 +24,7 @@ module.exports = {
             }
           ]
         },
-        { text: 'GitHub', link: 'https://github.com/emloxe/guide' }
+        { text: 'GitHub', link: 'https://github.com/emloxe/tutorial' }
     ],
     sidebar: {
       '/test1/': [
