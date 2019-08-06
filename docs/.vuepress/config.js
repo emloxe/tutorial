@@ -6,11 +6,26 @@ module.exports = {
     nav : [
       { text: 'test1', link: '/test1/' },
       { text: 'test2', link: '/DataStructures&Algorithms/' },
-      { text: 'test3', link: '/twaver/' },
+      { text: 'test3', 
+        items: [
+          {
+            text: 'twaver',
+            link: '/twaver/'
+          },
+          {
+            text: 't',
+            link: '/t/'
+          },
+          {
+            text: 'tt',
+            link: '/tt/'
+          }
+        ]
+      },
       {
         text: '关于',
         items: [
-          { 
+          {
             text: '关于',
             items: [
               { text: '本站', link: '/about' },
@@ -32,9 +47,6 @@ module.exports = {
         'one',
         'two',
       ],
-      '/test2/': [
-        '',
-      ],
       '/DataStructures&Algorithms/': [
         {
           title: '数据结构',
@@ -49,21 +61,11 @@ module.exports = {
         },
       ],
       '/twaver/': [
-        {
-          title: 'twaver',
-          collapsable: false,
-          children: [],
-        },
-        {
-          title: 't',
-          collapsable: false,
-          children: ['billboardChange'],
-        },
-        {
-          title: 'tt',
-          collapsable: false,
-          children: [],
-        },
+      ],
+      '/t/': [
+        'billboardChange',
+      ],
+      '/tt/': [
       ],
     },
     sidebarDepth : 3,
