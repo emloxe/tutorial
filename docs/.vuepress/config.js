@@ -47,6 +47,10 @@ module.exports = {
         'one',
         'two',
       ],
+      'js': [
+        '',
+        'Array',
+      ],
       '/DataStructures&Algorithms/': [
         {
           title: '数据结构',
