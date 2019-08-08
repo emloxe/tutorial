@@ -6,22 +6,6 @@ module.exports = {
     nav : [
       { text: 'test1', link: '/test1/' },
       { text: 'test2', link: '/DataStructures&Algorithms/' },
-      { text: 'test3', 
-        items: [
-          {
-            text: 'twaver',
-            link: '/twaver/'
-          },
-          {
-            text: 't',
-            link: '/t/'
-          },
-          {
-            text: 'tt',
-            link: '/tt/'
-          }
-        ]
-      },
       {
         text: '关于',
         items: [
@@ -63,13 +47,6 @@ module.exports = {
           collapsable: false,
           children: ['sort']
         },
-      ],
-      '/twaver/': [
-      ],
-      '/t/': [
-        'billboardChange',
-      ],
-      '/tt/': [
       ],
     },
     sidebarDepth : 3,
