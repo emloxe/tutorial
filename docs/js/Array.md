@@ -56,14 +56,13 @@ findIndex
 
 
 
-
-
 ## 具体事例
 
 ### 创建指定长度的数组
 
 如果我们要创建长度为2的空数组
 常用一下方式
+
 ```js
 const a = [];
 a.length = 2;
@@ -84,6 +83,17 @@ Array(2).fill([]); // [[], []]
 
 ```js
 Array.from({length: 5}, (v, i) => i); // [0, 1, 2, 3, 4]
+[...Array(5).keys()]; // [0, 1, 2, 3, 4]
 ```
 `Array.from`相当于两步操作 初始化+遍历
+
+经过测试，初始数组为`[0, 1, 2, 3, ...]`这类数组，第二种性能会较好
+
+`Array.from`方式
+
+![images](./images/Array1.png)
+
+解构赋值方式
+
+![images](./images/Array2.png)
 
