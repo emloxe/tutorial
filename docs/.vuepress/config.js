@@ -4,8 +4,8 @@ module.exports = {
   base : '/tutorial/',
   themeConfig : {
     nav : [
-      { text: 'test1', link: '/js/' },
-      { text: 'test2', link: '/DataStructures&Algorithms/' },
+      { text: 'js', link: '/js/' },
+      { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
       {
         text: '关于',
         items: [
@@ -34,6 +34,7 @@ module.exports = {
       '/js/': [
         '',
         'Array',
+        'Date',
       ],
       '/DataStructures&Algorithms/': [
         {
