@@ -35,6 +35,8 @@ module.exports = {
         '',
         'Array',
         'Date',
+        'dom',
+        'util'
       ],
       '/DataStructures&Algorithms/': [
         {

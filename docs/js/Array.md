@@ -121,6 +121,16 @@ const arr = Array(5).fill([]);
 注意在这种方式下，如果修改`arr[0][1] = 1`，其他所有项都会同步，所以这种方式是不合适的。
 
 
+### 数组合并不去重
+```js
+// 使用 concat，不能去除重复值
+function merge(...args) {
+  return [].concat(...args)
+}
+// ES6，同样不能去除重复值
+array1 = [...array1, ...array2]
+```
+
 ### 数组去重合并
 
 单一数组去重
@@ -139,4 +149,11 @@ function combine(...arg){
 } 
 var m = [1, 2, 2], n = [2,3,3], l = [4, 2, 2]; 
 console.log(combine(m, n, l));                     // [1, 2, 3, 4]
+```
+### 类数组对象转化为真正的JavaScript数组
+```js
+// Native
+Array.prototype.slice.call(arrayLike);
+// ES6-way
+Array.from(arrayLike);
 ```
