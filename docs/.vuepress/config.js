@@ -6,6 +6,12 @@ module.exports = {
     nav : [
       { text: 'js', link: '/js/' },
       { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
+      { 
+        text: '其他',
+        items: [
+          { text: 'GIT', link: '/other/git' },
+        ]    
+      },
       {
         text: '关于',
         items: [
