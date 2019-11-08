@@ -25,7 +25,7 @@ function getOffset (el) {
 
 ## 事件
 
-自定义事件的绑定
+### 自定义事件的绑定
 ```js
 // 添加一个适当的事件监听器
 el.addEventListener("custom-event", function(e) { process(e.detail) })
@@ -39,8 +39,71 @@ if (window.CustomEvent) {
 el.dispatchEvent(event);
 ```
 
-## 解析字符串为 DOM 节点数组
+
+### 事件委托
+```js
+/**
+ * 事件委托
+ * @param {HTMLElement} dom 元素
+ * @param {String} eventName 事件名称
+ * @param {String} targetName 可以传入 name、id #ele、class 。ele
+ * @param {Function} cb 回调函数
+ */
+export const eventDelegation = (scope, dom, eventName, targetName, cb) => {
+
+  function isTarget(ele, targetName) {
+    if (/^#/.test(targetName)) {
+      const name = targetName.slice(1,-1);
+      if (ele.id === name) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if (/^./.test(targetName)) {
+      const name = targetName.slice(1,targetName.length);
+      if (ele.classList.contains(name)) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      if (ele.nodeName === targetName) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+
+  const handle = (event) => {
+    let target = null;
+    for (let i = 0, len = event.path.length; i < len; i += 1) {
+      const ele = event.path[i];
+      if (ele === dom) {
+        break;
+      }
+      if (isTarget(ele, targetName)) {
+        target = ele;
+        break;
+      }
+    }
+    if (target) {
+      cb && cb.call(scope, event);
+    }
+  }
+
+  dom.addEventListener(eventName, handle);
+
+  return {
+    dispose: () => {
+      dom.removeEventListener(eventName, handle)
+    }
+  }
+};
 ```
+
+## 解析字符串为 DOM 节点数组
+```js
 function parseHTML(string) {
   const context = document.implementation.createHTMLDocument();
 
@@ -54,3 +117,4 @@ function parseHTML(string) {
   return context.body.children;
 }
 ```
+
