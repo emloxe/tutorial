@@ -3,7 +3,7 @@
 
 检测对象的 JavaScript [Class] 内部类型。
 
-```
+```js
 function type(item) {
   const reTypeOf = /(?:^\[object\s(.*?)\]$)/;
   return Object.prototype.toString.call(item)

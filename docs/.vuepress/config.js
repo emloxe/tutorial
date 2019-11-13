@@ -42,6 +42,7 @@ module.exports = {
         'Array',
         'Date',
         'dom',
+        'RegExp',
         'util'
       ],
       '/DataStructures&Algorithms/': [

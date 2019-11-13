@@ -204,3 +204,64 @@ git stash pop
 ```
 git reset --hard
 ```
+
+
+## 其他配置
+
+### windows 上git大小写不敏感，可以设置如下
+```
+git config core.ignorecase false
+```
+
+### 解决 Windows git Bash、Linux 下的中文转码问题
+
+```
+git config --global core.quotepath false
+```
+
+### 配置换行符
+不同的操作系统对换行符的定义会有所不同，Unix或类Unix操作系统的换行符叫做LF，而windows系统的叫做CRLF，二者具有很大的区别
+<!-- more -->
+
+> Unix系统里，每行结尾只有'<换行>'，即'n'；Windows系统里面，每行结尾是'<换行><回车>'
+Note:引自回车(CR)与换行(LF)， ‘r’和’n’的区别.
+
+这就是造成问题的根源——即如果你使用的是windows系统，而你的小伙伴用的是Mac的话，当你们使用git协同开发软件时，就会出现换行符不统一的问题。
+
+git其实可以自己处理换行符不统一的问题，但是可能会产生意想不到的结果。因此，有必要进行相关的配置，我们通常有两种方案：
+
+全局配置换行符
+针对某个仓库的局部配置
+
+#### 全局配置
+```
+git config --global core.autocrlf input
+```
+
+> autocrlf =true 表示要求git在提交时将crlf转换为lf，而在检出时将crlf转换为lf。  
+> autocrlf = false表示提交和检出代码时均不进行转换  
+> autocrlf = input 表示在提交时将crlf转换为lf，而检出时不转换  
+
+#### 单一仓库的换行符局部配置
+使用.gitattributes文件统一换行符。这种方法是针对某个仓库进行换行符的统一配置，即时你已经进行了全局配置。
+
+另外，这个文件有点儿类似于.gitignore，不仅名字很类似，使用方式，编写语法也很像。这个文件必须位于仓库的根目录，可以像其他文件一样进行修改、提交
+
+```
+# 将所有的纯文本文件末尾改成 Unix 风格的 lf
+* text eol=lf
+
+# 排除掉非纯文本文件
+*.jpg -text
+*.png -text
+*.pdf -text
+*.doc -text
+```
+`text=auto `
+让git自行处理左边匹配的文件使用何种换行符格式，这是默认选项。
+
+`text eol=crlf `
+对左边匹配的文件统一使用CRLF换行符格式，如果有文件中出现LF将会转换成CRLF。
+
+`text eol=lf `
+对左边匹配的文件统一使用LF换行符格式，如果有文件中出现CRLF将会转换成LF。
