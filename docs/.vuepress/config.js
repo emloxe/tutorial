@@ -38,12 +38,21 @@ module.exports = {
         'two',
       ],
       '/js/': [
-        '',
-        'Array',
-        'Date',
-        'dom',
-        'RegExp',
-        'util'
+        {
+          title: '基本',
+          collapsable: false,
+          children: [
+            'Array',
+            'Date',
+            'dom',
+            'RegExp',
+          ]
+        },
+        {
+          title: '实例',
+          collapsable: false,
+          children: ['util', 'upload']
+        },
       ],
       '/DataStructures&Algorithms/': [
         {

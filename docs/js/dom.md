@@ -49,7 +49,7 @@ el.dispatchEvent(event);
  * @param {String} targetName 可以传入 name、id #ele、class 。ele
  * @param {Function} cb 回调函数
  */
-export const eventDelegation = (scope, dom, eventName, targetName, cb) => {
+export const eventDelegation = (dom, eventName, targetName, cb) => {
 
   function isTarget(ele, targetName) {
     if (/^#/.test(targetName)) {
@@ -88,7 +88,7 @@ export const eventDelegation = (scope, dom, eventName, targetName, cb) => {
       }
     }
     if (target) {
-      cb && cb.call(scope, event);
+      cb && cb(event);
     }
   }
 
