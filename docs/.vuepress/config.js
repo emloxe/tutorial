@@ -10,6 +10,7 @@ module.exports = {
         text: '其他',
         items: [
           { text: 'GIT', link: '/other/git' },
+          { text: 'AXIOS', link: '/other/axios' },
         ]    
       },
       {
