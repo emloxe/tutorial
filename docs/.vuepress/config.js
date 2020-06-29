@@ -11,6 +11,7 @@ module.exports = {
         items: [
           { text: 'GIT', link: '/other/git' },
           { text: 'AXIOS', link: '/other/axios' },
+          { text: 'MYSQL', link: '/other/mysql' },
         ]    
       },
       {

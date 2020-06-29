@@ -8,7 +8,7 @@ sidebar: auto
 
 需要携带的参数是`test: 123`
 
-### GET
+**GET**
 ```js
 axios.get('/test', { params: { test: 123 }}).catch((error) => {
   console.log(error);
@@ -19,17 +19,17 @@ axios.get('/test', { params: { test: 123 }}).catch((error) => {
 });
 ```
 
-### POST
+**POST**
 ```js
 axios.post('/test', { test: 123 });
 ```
 
-### PUT
+**PUT**
 ```js
 axios.put('/test', { test: 123 });
 ```
 
-### DELETE
+**DELETE**
 ```js
 axios.delete('/test', {data: { test: 123 }});
 ```
