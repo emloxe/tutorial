@@ -31,6 +31,15 @@ sidebar: auto
 > describe 表名;
 ```
 
+删除表中数据
+```
+> delete from 表名;
+```
+
+删除表中一行数据
+```
+> DELETE FROM 表名 where num = 8 ;
+```
 
 
 ## 数据导入导出
