@@ -16,19 +16,39 @@ sidebar: auto
 > show databases;
 ```
 
+创建数据库
+```
+> CREATE DATABASE
+```
+
 选择数据库
 ```
 > use 数据库名;
 ```
 
+```
+drop database <数据库名>;
+```
+
 查看选择数据库中的表名称
 ```
-> show tabels;
+> show tables;
 ```
 
 查看表结构
 ```
 > describe 表名;
+```
+
+
+查看表所有数据
+```
+> select * from  表名;
+```
+
+删除整个表
+```
+> DROP TABLE 表名;
 ```
 
 删除表中数据
@@ -77,3 +97,4 @@ mysql>use 数据库
 ```
 mysql>source d:/dbname.sql
 ```
+
