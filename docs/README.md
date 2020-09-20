@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+<!-- heroImage: /images/th.jpg -->
 heroText: TUTORIAL
 tagline: 以大多数人的努力程度，根本轮不到拼天赋
 actionText: Get Started →

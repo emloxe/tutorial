@@ -118,3 +118,7 @@ function parseHTML(string) {
 }
 ```
 
+
+# 资料
+https://github.com/nefe/You-Dont-Need-jQuery/blob/master/README.zh-CN.md
+
