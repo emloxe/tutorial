@@ -40,7 +40,29 @@ el.dispatchEvent(event);
 ```
 
 
-### 事件委托
+### 事件委托点击
+```js
+/**
+ * 根据事件参数获取冒泡的所有元素
+ * @param {Event} e
+ */
+export function eventPath(e) {
+  /** 兼容性
+     * e.path: chrome opear
+     * e.composedPath: safari firfox
+     */
+  const path = e.path || (e.composedPath && e.composedPath());
+  if (path) {
+    return path.concat([window]);
+  }
+
+  /**
+     * ie11 , edge
+     */
+  return [e.target].concat(getParents(e.target), [window]);
+}
+```
+
 ```js
 /**
  * 事件委托
@@ -50,34 +72,29 @@ el.dispatchEvent(event);
  * @param {Function} cb 回调函数
  */
 export const eventDelegation = (dom, eventName, targetName, cb) => {
-
   function isTarget(ele, targetName) {
     if (/^#/.test(targetName)) {
-      const name = targetName.slice(1,-1);
+      const name = targetName.slice(1, -1);
       if (ele.id === name) {
         return true;
-      } else {
-        return false;
       }
-    } else if (/^./.test(targetName)) {
-      const name = targetName.slice(1,targetName.length);
+      return false;
+    } if (/^\./.test(targetName)) {
+      const name = targetName.slice(1, targetName.length);
       if (ele.classList.contains(name)) {
         return true;
-      } else {
-        return false;
       }
-    } else {
-      if (ele.nodeName === targetName) {
-        return true;
-      } else {
-        return false;
-      }
+      return false;
     }
+    if (ele.nodeName === targetName.toUpperCase()) {
+      return true;
+    }
+    return false;
   }
 
   const handle = (event) => {
     let target = null;
-    for (let i = 0, len = event.path.length; i < len; i += 1) {
+    for (let i = 0, len = eventPath(event).length; i < len; i += 1) {
       const ele = event.path[i];
       if (ele === dom) {
         break;
@@ -88,17 +105,17 @@ export const eventDelegation = (dom, eventName, targetName, cb) => {
       }
     }
     if (target) {
-      cb && cb(event);
+      cb && cb(event, target);
     }
-  }
+  };
 
   dom.addEventListener(eventName, handle);
 
   return {
     dispose: () => {
-      dom.removeEventListener(eventName, handle)
-    }
-  }
+      dom.removeEventListener(eventName, handle);
+    },
+  };
 };
 ```
 
