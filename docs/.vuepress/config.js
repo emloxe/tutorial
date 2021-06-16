@@ -5,13 +5,14 @@ module.exports = {
   themeConfig : {
     nav : [
       { text: 'js', link: '/js/' },
-      { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
+      { text: 'vue', link: '/vue/'},
       { 
         text: '其他',
         items: [
           { text: 'GIT', link: '/other/git' },
           { text: 'AXIOS', link: '/other/axios' },
           { text: 'MYSQL', link: '/other/mysql' },
+          { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
         ]    
       },
       {
@@ -34,11 +35,6 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/test1/': [
-        '',
-        'one',
-        'two',
-      ],
       '/js/': [
         {
           title: '基本',
@@ -56,6 +52,20 @@ module.exports = {
           children: ['util', 'upload']
         },
       ],
+      '/js/': [
+        {
+          title: '基本',
+          collapsable: false,
+          children: [
+            '多页面入口'
+          ]
+        },
+        {
+          title: '插件',
+          collapsable: true,
+          children: ['vuex']
+        },
+      ],
       '/DataStructures&Algorithms/': [
         {
           title: '数据结构',
@@ -70,7 +80,7 @@ module.exports = {
         },
       ],
     },
-    sidebarDepth : 3,
+    sidebarDepth : 2,
 
     displayAllHeaders: true,
     // sidebar: 'auto',
