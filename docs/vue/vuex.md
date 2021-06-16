@@ -4,7 +4,7 @@
 在目录下创建
 store/index.js
 
-```
+```js
 
 import Vue from 'vue'
 import Vuex from 'vuex'
