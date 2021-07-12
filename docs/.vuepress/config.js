@@ -5,6 +5,7 @@ module.exports = {
   themeConfig : {
     nav : [
       { text: 'js', link: '/js/' },
+      { text: 'react', link: '/react/' },
       { text: 'vue', link: '/vue/'},
       { 
         text: '其他',
@@ -52,7 +53,22 @@ module.exports = {
           children: ['util', 'upload']
         },
       ],
-      '/js/': [
+      '/react/': [
+        {
+          title: '基本',
+          collapsable: false,
+          children: [
+            'hook',
+            '路由',
+          ]
+        },
+        {
+          title: 'and',
+          collapsable: false,
+          children: ['动态使用Icon']
+        },
+      ],
+      '/vue/': [
         {
           title: '基本',
           collapsable: false,
@@ -64,6 +80,11 @@ module.exports = {
           title: '插件',
           collapsable: true,
           children: ['vuex']
+        },
+        {
+          title: '其他',
+          collapsable: true,
+          children: ['vscode', '打包']
         },
       ],
       '/DataStructures&Algorithms/': [
@@ -80,7 +101,7 @@ module.exports = {
         },
       ],
     },
-    sidebarDepth : 2,
+    sidebarDepth : 1,
 
     displayAllHeaders: true,
     // sidebar: 'auto',

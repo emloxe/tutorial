@@ -18,16 +18,16 @@ sidebar: auto
 
 创建数据库
 ```
-> CREATE DATABASE
+> CREATE DATABASE [数据库名];
 ```
 
 选择数据库
 ```
-> use 数据库名;
+> use  [数据库名];
 ```
 
 ```
-drop database <数据库名>;
+drop database [数据库名];
 ```
 
 查看选择数据库中的表名称
@@ -37,28 +37,28 @@ drop database <数据库名>;
 
 查看表结构
 ```
-> describe 表名;
+> describe [表名];
 ```
 
 
 查看表所有数据
 ```
-> select * from  表名;
+> select * from  [表名];
 ```
 
 删除整个表
 ```
-> DROP TABLE 表名;
+> DROP TABLE [表名];
 ```
 
 删除表中数据
 ```
-> delete from 表名;
+> delete from [表名];
 ```
 
 删除表中一行数据
 ```
-> DELETE FROM 表名 where num = 8 ;
+> DELETE FROM [表名] where num = 8 ;
 ```
 
 
