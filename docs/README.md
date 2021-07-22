@@ -4,7 +4,7 @@ home: true
 heroText: TUTORIAL
 tagline: 以大多数人的努力程度，根本轮不到拼天赋
 actionText: Get Started →
-actionLink: /guide/tutorial/
+actionLink: /js/
 <!-- features:
 - title: 简洁清晰
   details: 以简洁的语言，清晰的图例讲述晦涩的理论。 

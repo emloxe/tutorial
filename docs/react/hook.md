@@ -6,7 +6,6 @@ hook 采用函数式创建，不用采用class方式
 ```js
 import React, { useState, useEffect } from "react";
 
-
 function hook() {
 
   useEffect(() => {
@@ -37,6 +36,11 @@ function hook(props) {
 
 }
 ```
+
+
+## 参考文档
+http://www.ruanyifeng.com/blog/2019/09/react-hooks.html
+https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html
 
 
 

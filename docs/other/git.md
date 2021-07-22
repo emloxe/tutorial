@@ -30,6 +30,13 @@ git commit -m <备注本次合并的内容>
 git push origin dev
 ```
 
+
+### 强制推送到指定分支
+```
+git push origin master --force
+
+```
+
 ## 基本命令
 ```
 git config --list // 查看配置
