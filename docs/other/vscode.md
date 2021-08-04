@@ -1,6 +1,7 @@
 # vscode
 
 
+
 安装插件
 eslint，prettier，vetur
 
@@ -16,6 +17,17 @@ eslint，prettier，vetur
 "editor.tabSize": 2,
 "javascript.preferences.quoteStyle": "single",
 "prettier.singleQuote": true
+```
+
+
+## 格式化代码时，没有根据eslint格式
+
+加入配置
+
+```
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 ```
 
 ## 出现的问题
