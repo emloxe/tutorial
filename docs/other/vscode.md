@@ -30,6 +30,8 @@ eslint，prettier，vetur
   }
 ```
 
+如果发现格式化两次，说明刚刚以上配置和`"editor.formatOnSave": true`,注释即可。
+
 ## 出现的问题
 有时候出现保存vue文件时，自动保存格式化时，js中单引号 格式成双引号
 针对以上问题，可以在配置文件中加入`"vetur.format.defaultFormatter.js": "prettier-eslint"`
