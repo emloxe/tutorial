@@ -73,12 +73,12 @@ module.exports = {
         },
         {
           title: '插件',
-          collapsable: true,
+          collapsable: false,
           children: ['vuex']
         },
         {
           title: '其他',
-          collapsable: true,
+          collapsable: false,
           children: ['vscode', '打包']
         },
       ],

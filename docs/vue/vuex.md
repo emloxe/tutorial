@@ -52,6 +52,12 @@ export default store;
 
 Vue.prototype.$store = store;
 
+
+new Vue({
+  store,
+  render: h => h(App)
+}).$mount('#app');
+
 ```
 
 
