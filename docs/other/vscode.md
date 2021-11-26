@@ -36,4 +36,4 @@ eslint，prettier，vetur
 有时候出现保存vue文件时，自动保存格式化时，js中单引号 格式成双引号
 针对以上问题，可以在配置文件中加入`"vetur.format.defaultFormatter.js": "prettier-eslint"`
 
-![images](../../images/20210713a.png)
+![images](../images/20210713a.png)

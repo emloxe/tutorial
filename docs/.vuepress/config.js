@@ -13,6 +13,7 @@ module.exports = {
           { text: 'GIT', link: '/other/git' },
           { text: 'AXIOS', link: '/other/axios' },
           { text: 'MYSQL', link: '/other/mysql' },
+          { text: 'VSCODE', link: '/other/vscode' },
           { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
         ]    
       },
@@ -79,7 +80,7 @@ module.exports = {
         {
           title: '其他',
           collapsable: false,
-          children: ['vscode', '打包']
+          children: ['打包']
         },
       ],
       '/DataStructures&Algorithms/': [
