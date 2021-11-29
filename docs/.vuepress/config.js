@@ -21,10 +21,10 @@ module.exports = {
         text: '关于',
         items: [
           { text: '本站', link: '/about' },
-          { text: '作者', link: 'https://emloxe.github.io/' },
+          // { text: '作者', link: 'https://emloxe.github.io/' },
           { text: '推荐', 
             items: [
-              { text: '博客', link: 'https://emloxe.github.io/blog/' },
+              // { text: '博客', link: 'https://emloxe.github.io/blog/' },
               { text: '笔记', link: 'https://emloxe.github.io/note/' }
             ] 
           }
