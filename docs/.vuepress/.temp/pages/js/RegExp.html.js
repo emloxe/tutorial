@@ -24,6 +24,12 @@ export const data = {
           "children": []
         }
       ]
+    },
+    {
+      "level": 2,
+      "title": "常用的正则验证",
+      "slug": "常用的正则验证",
+      "children": []
     }
   ],
   "filePathRelative": "js/RegExp.md",
