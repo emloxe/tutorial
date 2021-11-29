@@ -11,9 +11,10 @@ module.exports = {
         text: '其他',
         items: [
           { text: 'GIT', link: '/other/git' },
-          { text: 'AXIOS', link: '/other/axios' },
+          { text: 'axios', link: '/other/axios' },
           { text: 'MYSQL', link: '/other/mysql' },
-          { text: 'VSCODE', link: '/other/vscode' },
+          { text: 'VS code', link: '/other/vscode' },
+          { text: 'moment', link: '/other/moment' },
           { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
         ]    
       },
