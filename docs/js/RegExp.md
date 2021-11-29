@@ -19,7 +19,6 @@ const n = str.search(/Runoob/i);
 const n = str.search('Runoob');
 ```
 
-
 ## 常用的正则验证
 ```js
 /**
@@ -37,17 +36,6 @@ export const checkMobile = value => {
 };
 ```
 
-```js
-/**
- * 手机验证
- */
-export const checkMobile4 = value => {
-  if (value.trim() === '' || value.length < 4) {
-    return { code: 1, msg: '请输入至少4位数字' };
-  }
-  return { code: 0, msg: '验证通过' };
-};
-```
 
 ```js
 /**

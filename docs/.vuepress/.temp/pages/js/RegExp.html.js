@@ -34,12 +34,12 @@ export const data = {
   ],
   "filePathRelative": "js/RegExp.md",
   "git": {
-    "updatedTime": 1638163202000,
+    "updatedTime": 1638165210000,
     "contributors": [
       {
         "name": "ZWJ",
         "email": "qwrtyp@live.cn",
-        "commits": 1
+        "commits": 2
       }
     ]
   }
