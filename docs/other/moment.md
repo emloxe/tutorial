@@ -1,7 +1,7 @@
 # moment
 
 
-中文
+配置中文
 ```js
 moment.locale('zh', {
 	months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
@@ -42,3 +42,12 @@ moment.locale('zh', {
 });
 
 ```
+
+
+格式化
+
+```js
+moment(val).format('YYYY-MM-DD')
+```
+
+
