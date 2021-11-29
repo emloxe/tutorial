@@ -76,7 +76,16 @@ export const data = {
     }
   ],
   "filePathRelative": "js/Array.md",
-  "git": {}
+  "git": {
+    "updatedTime": 1638163202000,
+    "contributors": [
+      {
+        "name": "ZWJ",
+        "email": "qwrtyp@live.cn",
+        "commits": 1
+      }
+    ]
+  }
 }
 
 if (import.meta.webpackHot) {
