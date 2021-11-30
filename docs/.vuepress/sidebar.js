@@ -36,7 +36,8 @@ module.exports =  {
       text: '基本',
       collapsable: false,
       children: [
-        'pages'
+        'pages',
+        'dataTransmission'
       ]
     },
     {

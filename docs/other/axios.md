@@ -24,6 +24,13 @@ axios.get('/test', { params: { test: 123 }}).catch((error) => {
 axios.post('/test', { test: 123 });
 ```
 
+post请求在url上携带信息可以写成如下形式
+```js
+// url显示为 /test?test2=123
+axios.post('/test', { test: 123 }, { params: { test2: 123 } });
+```
+
+
 **PUT**
 ```js
 axios.put('/test', { test: 123 });

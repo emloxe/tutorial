@@ -22,10 +22,10 @@ const store = new Vuex.Store({
     }
   },
   mutations: {
-    increment(state) {
+    increment(state, arr) {
       // 变更状态
       state.index++;
-      state.array.push(1);
+      state.array.push(...arr);
     }
   },
   actions: { // 可异步，然后调用mutations
@@ -40,11 +40,8 @@ const store = new Vuex.Store({
       })
     }
   }
-
 })
-
 export default store;
-
 ```
   </CodeGroupItem>
   
@@ -52,9 +49,10 @@ export default store;
   <CodeGroupItem title="main.js" >
 
 ```js
+// vue2
+import store from './store';
 
 Vue.prototype.$store = store;
-
 
 new Vue({
   store,
@@ -103,7 +101,7 @@ new Vue({
     },
     methods: {
       clickHandle() {
-        this.$store.commit('increment');
+        this.$store.commit('increment', [1, 2]);
       },
       clickHandle2() {
         this.$store.dispatch('incrementAsync').then(() => {
@@ -113,11 +111,6 @@ new Vue({
     }
   }
 </script>
-
-<style>
-
-</style>
-
 ```
       
   </CodeGroupItem>
