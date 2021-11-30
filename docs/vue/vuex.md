@@ -50,6 +50,7 @@ export default store;
   
   
   <CodeGroupItem title="main.js" >
+
 ```js
 
 Vue.prototype.$store = store;
@@ -62,8 +63,9 @@ new Vue({
 
 ```    
     
-   </CodeGroupItem>
-    <CodeGroupItem title="组件中" >
+  </CodeGroupItem>
+  <CodeGroupItem title="组件中" >
+
 ```vue
 <template>
   <view>
@@ -119,7 +121,7 @@ new Vue({
 ```
       
   </CodeGroupItem>
- </CodeGroup>
+</CodeGroup>
 
 
 
