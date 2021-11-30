@@ -1,11 +1,12 @@
 # vuex
 
 
-在目录下创建
-store/index.js
 
+<CodeGroup>
+  <CodeGroupItem title="store/index.js" active>
+    
 ```js
-
+// 在目录下创建
 import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
@@ -45,9 +46,10 @@ const store = new Vuex.Store({
 export default store;
 
 ```
-
-## 调用
-在 main.js 中
+  </CodeGroupItem>
+  
+  
+  <CodeGroupItem title="main.js" >
 ```js
 
 Vue.prototype.$store = store;
@@ -58,10 +60,10 @@ new Vue({
   render: h => h(App)
 }).$mount('#app');
 
-```
-
-
-在组件中
+```    
+    
+   </CodeGroupItem>
+    <CodeGroupItem title="组件中" >
 ```vue
 <template>
   <view>
@@ -115,7 +117,9 @@ new Vue({
 </style>
 
 ```
-
+      
+  </CodeGroupItem>
+ </CodeGroup>
 
 
 
