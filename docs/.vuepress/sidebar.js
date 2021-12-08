@@ -43,7 +43,7 @@ module.exports =  {
     {
       text: '插件',
       collapsable: false,
-      children: ['vuex']
+      children: ['vuex', 'router']
     },
     {
       text: '其他',
@@ -65,3 +65,4 @@ module.exports =  {
     },
   ],
 }
+

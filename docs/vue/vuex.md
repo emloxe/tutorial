@@ -1,7 +1,7 @@
 # vuex
 
 
-
+## v2
 <CodeGroup>
   <CodeGroupItem title="store/index.js" active>
     
