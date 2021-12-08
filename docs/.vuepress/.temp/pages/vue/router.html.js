@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-97cf0fe4",
   "path": "/vue/router.html",
-  "title": "路由",
+  "title": "router",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
@@ -31,4 +31,17 @@ export const data = {
       }
     ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

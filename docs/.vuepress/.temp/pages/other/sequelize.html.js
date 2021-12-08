@@ -10,7 +10,14 @@ export const data = {
       "level": 2,
       "title": "文档",
       "slug": "文档",
-      "children": []
+      "children": [
+        {
+          "level": 3,
+          "title": "校验",
+          "slug": "校验",
+          "children": []
+        }
+      ]
     },
     {
       "level": 2,
@@ -30,4 +37,17 @@ export const data = {
       }
     ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

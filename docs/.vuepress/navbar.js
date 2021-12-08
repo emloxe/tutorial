@@ -9,8 +9,12 @@ module.exports =  [
           { text: 'axios', link: '/other/axios' },
           { text: 'MYSQL', link: '/other/mysql' },
           { text: 'VS code', link: '/other/vscode' },
+          { text: 'sequelize', link: '/other/sequelize' },
+          // { text: 'yarn', link: '/other/yarn' },
           { text: 'moment', link: '/other/moment' },
           { text: '数据结构与算法', link: '/DataStructures&Algorithms/' },
+
+
         ]    
       },
       {

@@ -1,4 +1,4 @@
-<template><h1 id="路由" tabindex="-1"><a class="header-anchor" href="#路由" aria-hidden="true">#</a> 路由</h1>
+<template><h1 id="router" tabindex="-1"><a class="header-anchor" href="#router" aria-hidden="true">#</a> router</h1>
 <h2 id="v2" tabindex="-1"><a class="header-anchor" href="#v2" aria-hidden="true">#</a> v2</h2>
 <p>main.js</p>
 <div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>import router from './router';

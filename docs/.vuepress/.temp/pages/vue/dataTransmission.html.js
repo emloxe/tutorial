@@ -52,13 +52,26 @@ export const data = {
   ],
   "filePathRelative": "vue/dataTransmission.md",
   "git": {
-    "updatedTime": 1638926892000,
+    "updatedTime": 1638927455000,
     "contributors": [
       {
         "name": "ZWJ",
         "email": "qwrtyp@live.cn",
-        "commits": 2
+        "commits": 3
       }
     ]
   }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }
