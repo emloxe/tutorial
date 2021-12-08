@@ -103,14 +103,16 @@ export const themeData = {
         "text": "基本",
         "collapsable": false,
         "children": [
-          "pages"
+          "pages",
+          "dataTransmission"
         ]
       },
       {
         "text": "插件",
         "collapsable": false,
         "children": [
-          "vuex"
+          "vuex",
+          "router"
         ]
       },
       {
@@ -172,17 +174,4 @@ export const themeData = {
   "selectLanguageAriaLabel": "Select language",
   "editLink": true,
   "contributors": true
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateThemeData) {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ themeData }) => {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  })
 }

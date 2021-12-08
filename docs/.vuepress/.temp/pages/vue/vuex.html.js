@@ -8,8 +8,8 @@ export const data = {
   "headers": [
     {
       "level": 2,
-      "title": "调用",
-      "slug": "调用",
+      "title": "v2",
+      "slug": "v2",
       "children": []
     },
     {
@@ -21,26 +21,18 @@ export const data = {
   ],
   "filePathRelative": "vue/vuex.md",
   "git": {
-    "updatedTime": 1638163202000,
+    "updatedTime": 1638926892000,
     "contributors": [
       {
         "name": "ZWJ",
+        "email": "qwrtyp@live.cn",
+        "commits": 4
+      },
+      {
+        "name": "W.J. Zhang",
         "email": "qwrtyp@live.cn",
         "commits": 1
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

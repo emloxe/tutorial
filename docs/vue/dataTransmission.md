@@ -58,7 +58,7 @@ export default {
 
 
 最终展示效果如下
-![images](./images/2019071401.png)
+![images](../images/2019071401.png)
 
 在以上代码中，父组件引入了子组件，并通过以下形式传递
 ```html
