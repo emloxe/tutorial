@@ -4,7 +4,7 @@ var sidebar = require('./sidebar');
 
 module.exports = {
   title: 'TUTORIAL',  // 设置网站标题
-  description : 'W.J. Zhang教程教程网站，张雯瑾教程网站，emloxe',
+  description : 'Zhang W.J. 教程教程网站，张雯瑾教程网站，emloxe',
   base : '/tutorial/',
   themeConfig : {
     navbar,
@@ -13,8 +13,6 @@ module.exports = {
 
     displayAllHeaders: true,
     // sidebar: 'auto',
-
-    lastUpdated: 'Last Updated',
 
     repo: 'emloxe/tutorial',
     repoLabel: 'GitHub',
