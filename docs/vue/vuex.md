@@ -1,7 +1,7 @@
 # vuex
 
 
-## v2
+## v3
 <CodeGroup>
   <CodeGroupItem title="store/index.js" active>
     
@@ -118,7 +118,7 @@ new Vue({
 
 
 
-## v3
+## v4
 采用 setup 模式
 
 <CodeGroup>
@@ -196,3 +196,5 @@ store.dispatch('incrementAsync').then(() => {
 ## 参考文档
 
 https://vuex.vuejs.org/zh/guide/actions.html
+
+https://next.vuex.vuejs.org/zh/guide/

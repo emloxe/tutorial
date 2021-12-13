@@ -112,3 +112,7 @@ validate: {
 SELECT CONCAT('ALTER TABLE ',i.TABLE_NAME,' DROP INDEX ',i.INDEX_NAME,' ;') 
 FROM INFORMATION_SCHEMA.STATISTICS i WHERE TABLE_SCHEMA = 'bianjizutai' AND i.INDEX_NAME <> 'PRIMARY';
 ```
+
+
+## 文档
+https://www.sequelize.com.cn/

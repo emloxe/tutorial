@@ -1,7 +1,7 @@
 # router
 
 
-## v2
+## v3
 main.js
 
 ```vue
@@ -117,3 +117,4 @@ this.$router.push('/add-project');
 this.$router.go(-1);
 this.$router.push({ path: '/edit-project', query: { id } })
 ```
+
