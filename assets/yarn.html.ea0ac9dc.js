@@ -1,0 +1,1 @@
+const e={key:"v-0bcd0886",path:"/other/yarn.html",title:"yarn",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u57FA\u7840\u4F7F\u7528",slug:"\u57FA\u7840\u4F7F\u7528",children:[]}],git:{updatedTime:1640652882e3,contributors:[{name:"ZWJ",email:"qwrtyp@live.cn",commits:1}]},filePathRelative:"other/yarn.md"};export{e as data};
