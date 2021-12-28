@@ -174,15 +174,25 @@ app.use(store).use(router).mount('#app');
 ```
 
   </CodeGroupItem>
-  
-  
+
   <CodeGroupItem title="组件中">
 
 
-```js
+```vue
+<template>
+  <div >
+    {{store.state.index}}
+    {{store.getters.arrayLen}}
+  </div>
+</template>
+
+
+
 import { useStore } from 'vuex';
 
 const store = useStore();
+
+store.commit('increment', [1, 2]);
 store.dispatch('incrementAsync').then(() => {
   console.log('异步触发完成')
 });
