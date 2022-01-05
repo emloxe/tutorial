@@ -1,1 +1,0 @@
-const e={key:"v-0e3dfefe",path:"/other/moment.html",title:"moment",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1640652882e3,contributors:[{name:"ZWJ",email:"qwrtyp@live.cn",commits:1}]},filePathRelative:"other/moment.md"};export{e as data};
