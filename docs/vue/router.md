@@ -152,3 +152,10 @@ router.beforeEach(async (to, from, next) => {
   }
 });
 ```
+
+### 路由跳转
+```js
+import router, { resetRouter } from '@/router';
+
+router.push('/login');
+```
