@@ -4,7 +4,7 @@
 ## v3
 main.js
 
-```vue
+```js
 import router from './router';
 
 new Vue({
@@ -17,7 +17,7 @@ new Vue({
 
 router/index.js
 
-```vue
+```js
 import Vue from 'vue';
 Vue.use(VueRouter);
 import Home from '../Tabs/Home.vue';
