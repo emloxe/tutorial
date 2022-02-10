@@ -1,1 +1,0 @@
-const e={key:"v-6d62e284",path:"/vue/pack.html",title:"vue-cli4\u8BBE\u7F6E\u6253\u5305\u76F8\u5BF9\u8DEF\u5F84",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1641347059e3,contributors:[{name:"ZWJ",email:"qwrtyp@live.cn",commits:1}]},filePathRelative:"vue/pack.md"};export{e as data};
