@@ -3,12 +3,11 @@ import { Vuepress } from '@vuepress/client/lib/components/Vuepress'
 const routeItems = [
   ["v-22a39d25","/about.html","关于本站",["/about","/about.md"]],
   ["v-8daa1a0e","/","",["/index.html","/README.md"]],
+  ["v-5cc74f19","/canvas/util.html","",["/canvas/util","/canvas/util.md"]],
   ["v-c49f5be6","/DataStructures&Algorithms/Algorithms.html","算法",["/DataStructures&Algorithms/Algorithms","/DataStructures&Algorithms/Algorithms.md"]],
   ["v-1bec2b07","/DataStructures&Algorithms/DataStructures.html","数据结构",["/DataStructures&Algorithms/DataStructures","/DataStructures&Algorithms/DataStructures.md"]],
   ["v-450efb70","/DataStructures&Algorithms/","前言",["/DataStructures&Algorithms/index.html","/DataStructures&Algorithms/README.md"]],
   ["v-7398a69a","/DataStructures&Algorithms/sort.html","排序",["/DataStructures&Algorithms/sort","/DataStructures&Algorithms/sort.md"]],
-  ["v-5cc74f19","/canvas/util.html","",["/canvas/util","/canvas/util.md"]],
-  ["v-0f5e6bae","/mysql/data.html","数据操作",["/mysql/data","/mysql/data.md"]],
   ["v-0d47706d","/js/Array.html","数组",["/js/Array","/js/Array.md"]],
   ["v-756cddfe","/js/Date.html","时间",["/js/Date","/js/Date.md"]],
   ["v-0f769244","/js/dom.html","HTML DOM 元素对象",["/js/dom","/js/dom.md"]],

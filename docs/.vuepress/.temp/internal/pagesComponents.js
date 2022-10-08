@@ -5,6 +5,8 @@ export const pagesComponents = {
   "v-22a39d25": defineAsyncComponent(() => import(/* webpackChunkName: "v-22a39d25" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/about.html.vue")),
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/index.html.vue")),
+  // path: /canvas/util.html
+  "v-5cc74f19": defineAsyncComponent(() => import(/* webpackChunkName: "v-5cc74f19" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/canvas/util.html.vue")),
   // path: /DataStructures&Algorithms/Algorithms.html
   "v-c49f5be6": defineAsyncComponent(() => import(/* webpackChunkName: "v-c49f5be6" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/DataStructures&Algorithms/Algorithms.html.vue")),
   // path: /DataStructures&Algorithms/DataStructures.html
@@ -13,10 +15,6 @@ export const pagesComponents = {
   "v-450efb70": defineAsyncComponent(() => import(/* webpackChunkName: "v-450efb70" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/DataStructures&Algorithms/index.html.vue")),
   // path: /DataStructures&Algorithms/sort.html
   "v-7398a69a": defineAsyncComponent(() => import(/* webpackChunkName: "v-7398a69a" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/DataStructures&Algorithms/sort.html.vue")),
-  // path: /canvas/util.html
-  "v-5cc74f19": defineAsyncComponent(() => import(/* webpackChunkName: "v-5cc74f19" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/canvas/util.html.vue")),
-  // path: /mysql/data.html
-  "v-0f5e6bae": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f5e6bae" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/mysql/data.html.vue")),
   // path: /js/Array.html
   "v-0d47706d": defineAsyncComponent(() => import(/* webpackChunkName: "v-0d47706d" */"F:/FE/vuepress6/docs/.vuepress/.temp/pages/js/Array.html.vue")),
   // path: /js/Date.html
