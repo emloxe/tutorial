@@ -8,8 +8,8 @@ export const data = {
   "headers": [
     {
       "level": 2,
-      "title": "v2",
-      "slug": "v2",
+      "title": "v3",
+      "slug": "v3",
       "children": [
         {
           "level": 3,
@@ -18,16 +18,35 @@ export const data = {
           "children": []
         }
       ]
+    },
+    {
+      "level": 2,
+      "title": "v4",
+      "slug": "v4",
+      "children": [
+        {
+          "level": 3,
+          "title": "路由守卫",
+          "slug": "路由守卫",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "路由跳转",
+          "slug": "路由跳转",
+          "children": []
+        }
+      ]
     }
   ],
   "filePathRelative": "vue/router.md",
   "git": {
-    "updatedTime": 1638926892000,
+    "updatedTime": 1644479493000,
     "contributors": [
       {
         "name": "ZWJ",
         "email": "qwrtyp@live.cn",
-        "commits": 1
+        "commits": 6
       }
     ]
   }

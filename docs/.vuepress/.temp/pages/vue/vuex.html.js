@@ -8,8 +8,14 @@ export const data = {
   "headers": [
     {
       "level": 2,
-      "title": "v2",
-      "slug": "v2",
+      "title": "v3",
+      "slug": "v3",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "v4",
+      "slug": "v4",
       "children": []
     },
     {
@@ -21,12 +27,12 @@ export const data = {
   ],
   "filePathRelative": "vue/vuex.md",
   "git": {
-    "updatedTime": 1638926892000,
+    "updatedTime": 1640652882000,
     "contributors": [
       {
         "name": "ZWJ",
         "email": "qwrtyp@live.cn",
-        "commits": 4
+        "commits": 7
       },
       {
         "name": "W.J. Zhang",

@@ -30,16 +30,22 @@ export const data = {
       "title": "常用的正则验证",
       "slug": "常用的正则验证",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "不常用",
+      "slug": "不常用",
+      "children": []
     }
   ],
   "filePathRelative": "js/RegExp.md",
   "git": {
-    "updatedTime": 1638165586000,
+    "updatedTime": 1641347059000,
     "contributors": [
       {
         "name": "ZWJ",
         "email": "qwrtyp@live.cn",
-        "commits": 3
+        "commits": 4
       }
     ]
   }

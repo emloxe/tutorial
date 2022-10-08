@@ -15,8 +15,14 @@ export const data = {
   ],
   "filePathRelative": "other/swagger.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1638953917000,
+    "contributors": [
+      {
+        "name": "ZWJ",
+        "email": "qwrtyp@live.cn",
+        "commits": 1
+      }
+    ]
   }
 }
 

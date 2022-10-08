@@ -6,10 +6,12 @@ module.exports = {
   title: 'TUTORIAL',  // 设置网站标题
   description : 'Zhang W.J. 教程教程网站，张雯瑾教程网站，emloxe',
   base : '/tutorial/',
+  // theme: 'reco',
   themeConfig : {
     navbar,
     sidebar,
     sidebarDepth : 1,
+    subSidebar: 'auto',
 
     displayAllHeaders: true,
     // sidebar: 'auto',

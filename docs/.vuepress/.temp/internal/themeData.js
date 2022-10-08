@@ -143,8 +143,8 @@ export const themeData = {
     ]
   },
   "sidebarDepth": 1,
+  "subSidebar": "auto",
   "displayAllHeaders": true,
-  "lastUpdated": "Last Updated",
   "repo": "emloxe/tutorial",
   "repoLabel": "GitHub",
   "docsRepo": "emloxe/tutorial",
@@ -177,6 +177,7 @@ export const themeData = {
   "selectLanguageText": "Languages",
   "selectLanguageAriaLabel": "Select language",
   "editLink": true,
+  "lastUpdated": true,
   "contributors": true
 }
 

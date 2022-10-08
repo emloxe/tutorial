@@ -13,6 +13,12 @@ export const data = {
       "children": [
         {
           "level": 3,
+          "title": "数据类型",
+          "slug": "数据类型",
+          "children": []
+        },
+        {
+          "level": 3,
           "title": "校验",
           "slug": "校验",
           "children": []
@@ -24,16 +30,22 @@ export const data = {
       "title": "遇到的问题",
       "slug": "遇到的问题",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "文档",
+      "slug": "文档-1",
+      "children": []
     }
   ],
   "filePathRelative": "other/sequelize.md",
   "git": {
-    "updatedTime": 1638163202000,
+    "updatedTime": 1639363044000,
     "contributors": [
       {
         "name": "ZWJ",
         "email": "qwrtyp@live.cn",
-        "commits": 1
+        "commits": 4
       }
     ]
   }
