@@ -5,6 +5,7 @@ module.exports =  [
       { 
         text: '其他',
         children: [
+          { text: 'css', link: '/other/css' },
           { text: 'GIT', link: '/other/git' },
           { text: 'axios', link: '/other/axios' },
           { text: 'MYSQL', link: '/other/mysql' },
