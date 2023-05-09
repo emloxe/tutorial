@@ -1,1 +1,0 @@
-const t={key:"v-c49f5be6",path:"/DataStructures&Algorithms/Algorithms.html",title:"\u7B97\u6CD5",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1644479493e3,contributors:[{name:"ZWJ",email:"qwrtyp@live.cn",commits:1}]},filePathRelative:"DataStructures&Algorithms/Algorithms.md"};export{t as data};
