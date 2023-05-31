@@ -84,17 +84,14 @@ home.vue
   <div class="home">
     <router-view></router-view>
     <van-tabbar v-model="active" route>
-      <van-tabbar-item replace to="/manager-index" icon="wap-home-o">
+      <van-tabbar-item to="/manager-index" icon="wap-home-o">
         首页
       </van-tabbar-item>
-      <!-- <van-tabbar-item replace to="/input-data" icon="search">
-        录入
-      </van-tabbar-item> -->
-      <van-tabbar-item replace to="/work" icon="apps-o">工作台</van-tabbar-item>
-      <van-tabbar-item replace to="/report-form" icon="cashier-o">
+      <van-tabbar-item to="/work" icon="apps-o">工作台</van-tabbar-item>
+      <van-tabbar-item to="/report-form" icon="cashier-o">
         报表
       </van-tabbar-item>
-      <van-tabbar-item replace to="/user" icon="contact">
+      <van-tabbar-item to="/user" icon="contact">
         我的
       </van-tabbar-item>
     </van-tabbar>
@@ -104,7 +101,7 @@ home.vue
 ```
 
 
-### 使用
+### 跳转
 
 ```vue
 <template>
@@ -117,6 +114,10 @@ this.$router.push('/add-project');
 this.$router.go(-1);
 this.$router.push({ path: '/edit-project', query: { id } })
 ```
+
+
+
+
 
 
 ## v4
@@ -154,8 +155,76 @@ router.beforeEach(async (to, from, next) => {
 ```
 
 ### 路由跳转
+采用v3也是可以的
 ```js
 import router, { resetRouter } from '@/router';
 
 router.push('/login');
+```
+
+
+
+### 保存页面
+采用keep-alive方式
+
+```html
+  <router-view v-slot="{ Component }">
+    <keep-alive include="HomeView,OrderView">
+      <component :is="Component" />
+    </keep-alive>
+  </router-view>
+```
+`HomeView,OrderView` 最好保持组件名称，路由名称一致
+组件中如
+```js
+// HomeView.vue
+export default {
+  name: 'HomeView',
+}
+```
+路由中
+```js
+// router/index.js
+const routes = [
+  {
+    path: '/',
+    name: 'HomeView',
+    meta: { keepAlive: true },
+    component: HomeView
+  }
+]
+```
+
+缓存中的组件多了2个状态
+```js
+  activated() { // 再次进入页面时，不在进入create状态
+  },
+  deactivated() { // 退出时状态
+  },
+```
+
+
+
+#### 高度缓存
+保存的页面无法缓存高度，可以采用如下方式
+```js
+// router/index.js
+const savedPositionObj = {};
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    console.log('scrollBehavior', to, from, savedPosition);
+
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      if (from.meta.keepAlive) {
+        savedPositionObj[from.fullPath] = from.savedPosition;
+      }
+
+      return { top: savedPositionObj[to.fullPath] || 0 };
+    }
+  }
+});
 ```
